@@ -12,4 +12,9 @@ Then, to unpack the model, use the following command:
 untar -xvf food.model.best.hdf5.tar.gz
 ```
 
-The resulting hdf5 file can be loaded with Keras API or DL4J API in order to perform predictions.
+The resulting hdf5 file can be loaded with Keras API or DL4J API in order to perform predictions. To verify the unpacked model, use the following command in conjunction with the sha512 verification file:
+
+```
+sha512sum --check food.model.best.hdf5.sha512
+food.model.best.hdf5: OK
+```
